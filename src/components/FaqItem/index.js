@@ -30,7 +30,7 @@ class FaqItem extends Component {
     return (
       <li className="faq-list">
         <div className="question-container">
-          <p className="question-text">{questionText}</p>
+          <h1 className="question-text text">{questionText}</h1>
           <button
             type="button"
             className="icon-button"
@@ -40,7 +40,7 @@ class FaqItem extends Component {
           </button>
         </div>
         {isActive ? <hr /> : ''}
-        <p className="answer-text">{isActive && answerText}</p>
+        <p className="answer-text text">{isActive && answerText}</p>
       </li>
     )
   }
