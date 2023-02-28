@@ -26,7 +26,7 @@ class FaqItem extends Component {
 
     const iconImage = isActive ? minusIcon : plusIcon
 
-    const altIcon = isActive ? 'plus' : 'minus'
+    const altIcon = isActive ? 'minus' : 'plus'
     return (
       <li className="faq-list">
         <div className="question-container">
@@ -40,7 +40,7 @@ class FaqItem extends Component {
           </button>
         </div>
         {isActive ? <hr /> : ''}
-        <p className="answer-text text">{isActive && answerText}</p>
+        {isActive && <p className="answer-text text">{answerText}</p>}
       </li>
     )
   }
